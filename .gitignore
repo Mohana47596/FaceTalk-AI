@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+.vite/
+
+# Keep public assets tracked EXCEPT large binaries if needed
+# (hero.fbx is 35 MB — include it so baseline is fully reproducible)

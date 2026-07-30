@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="female-skin-saree" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="saree-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#db2777" />
+      <stop offset="50%" stop-color="#be185d" />
+      <stop offset="100%" stop-color="#9d174d" />
+    </linearGradient>
+    <linearGradient id="saree-border" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+  <g id="female-saree-body">
+    <!-- Neck Base -->
+    <path d="M360,220 C360,220 360,320 345,340 C360,355 440,355 455,340 C440,320 440,220 440,220 Z" fill="url(#female-skin-saree)" />
+    
+    <!-- Blouse Neckline (deep scoop) -->
+    <path d="M330,340 C330,340 350,390 400,390 C450,390 470,340 470,340 Z" fill="#bfa38a" stroke="#cca43b" opacity="0.1" />
+    <path d="M330,340 C330,340 350,400 400,400 C450,400 470,340 470,340 L450,342 C450,342 430,385 400,385 C370,385 350,342 350,342 Z" fill="#db2777" stroke="#cbd5e1" stroke-width="1.5" />
+    
+    <!-- Saree Draping & Body -->
+    <path d="M230,380 C160,420 130,550 120,650 C120,750 140,1200 140,1200 L660,1200 C660,1200 680,750 680,650 C670,550 640,420 570,380 C530,360 480,355 480,355 L400,410 L320,355 C320,355 270,360 230,380 Z" fill="url(#saree-base)" />
+    
+    <!-- Saree Pallu (Traditional Shoulder Drape running diagonally) -->
+    <path d="M230,380 L350,360 L500,1200 L380,1200 Z" fill="#be185d" stroke="#cca43b" stroke-width="1" />
+    <path d="M320,360 L350,360 L450,1200 L420,1200 Z" fill="url(#saree-border)" />
+    <path d="M230,380 L250,380 L395,1200 L375,1200 Z" fill="url(#saree-border)" />
+    
+    <!-- Golden embroidery motifs inside saree -->
+    <circle cx="300" cy="500" r="4" fill="#fbbf24" opacity="0.6" />
+    <circle cx="280" cy="650" r="4" fill="#fbbf24" opacity="0.6" />
+    <circle cx="310" cy="800" r="4" fill="#fbbf24" opacity="0.6" />
+    <circle cx="560" cy="550" r="4" fill="#fbbf24" opacity="0.6" />
+    <circle cx="590" cy="700" r="4" fill="#fbbf24" opacity="0.6" />
+  </g>
+</svg>

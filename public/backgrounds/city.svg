@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="night-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050508" />
+      <stop offset="60%" stop-color="#0c0721" />
+      <stop offset="100%" stop-color="#180e29" />
+    </linearGradient>
+    <linearGradient id="cyber-glow-cyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="cyber-glow-pink" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#ff007f" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#night-sky)" />
+  <!-- Building silhouettes in back -->
+  <g fill="#0b0615" opacity="0.8">
+    <rect x="100" y="300" width="200" height="780" />
+    <rect x="400" y="200" width="250" height="880" />
+    <rect x="750" y="400" width="180" height="680" />
+    <rect x="1050" y="150" width="300" height="930" />
+    <rect x="1450" y="350" width="220" height="730" />
+    <rect x="1750" y="250" width="200" height="830" />
+  </g>
+  <!-- Glowing windows in background buildings -->
+  <g fill="#ffea75" opacity="0.3">
+    <!-- Building at 400 -->
+    <rect x="450" y="250" width="15" height="25" />
+    <rect x="490" y="250" width="15" height="25" />
+    <rect x="530" y="250" width="15" height="25" />
+    <rect x="450" y="300" width="15" height="25" />
+    <rect x="530" y="300" width="15" height="25" />
+    <rect x="490" y="350" width="15" height="25" />
+    <!-- Building at 1050 -->
+    <rect x="1100" y="200" width="20" height="40" fill="#00f2fe" />
+    <rect x="1150" y="200" width="20" height="40" />
+    <rect x="1200" y="200" width="20" height="40" />
+    <rect x="1250" y="200" width="20" height="40" fill="#ff007f" />
+    <rect x="1100" y="280" width="20" height="40" />
+    <rect x="1200" y="280" width="20" height="40" fill="#00f2fe" />
+  </g>
+  <!-- Cyberpunk ground neon glow -->
+  <rect y="780" width="960" height="300" fill="url(#cyber-glow-cyan)" />
+  <rect x="960" y="780" width="960" height="300" fill="url(#cyber-glow-pink)" />
+  <!-- Neon tower grid lines -->
+  <line x1="0" y1="900" x2="1920" y2="900" stroke="#00f2fe" stroke-width="1.5" opacity="0.2" />
+  <line x1="0" y1="1000" x2="1920" y2="1000" stroke="#ff007f" stroke-width="1.5" opacity="0.2" />
+</svg>

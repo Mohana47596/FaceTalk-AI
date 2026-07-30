@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="female-skin-formal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="blazer-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#0f0728" />
+    </linearGradient>
+    <linearGradient id="inner-camisole" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+  </defs>
+  <g id="female-formal-body">
+    <!-- Neck Base -->
+    <path d="M360,220 C360,220 360,320 345,340 C360,355 440,355 455,340 C440,320 440,220 440,220 Z" fill="url(#female-skin-formal)" />
+    
+    <!-- Red V-Neck Camisole -->
+    <path d="M340,340 L370,410 L400,430 L430,410 L460,340 Z" fill="url(#inner-camisole)" />
+    
+    <!-- Elegant Blazer Shoulders & Body -->
+    <path d="M230,370 C160,410 130,540 120,650 C120,750 140,1200 140,1200 L660,1200 C660,1200 680,750 680,650 C670,540 640,410 570,370 C530,350 480,345 480,345 L400,430 L320,345 C320,345 270,350 230,370 Z" fill="url(#blazer-color)" />
+    
+    <!-- Blazer Lapels & Buttons -->
+    <path d="M320,345 L400,430 L400,650 L270,460 Z" fill="#0f172a" opacity="0.4" />
+    <path d="M480,345 L400,430 L400,650 L530,460 Z" fill="#1e1b4b" opacity="0.3" />
+    
+    <!-- Gold Button -->
+    <circle cx="400" cy="620" r="8" fill="#fbbf24" stroke="#d97706" stroke-width="2" />
+  </g>
+</svg>

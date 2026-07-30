@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="casual-skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="hoodie-color" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="inner-tee" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+  </defs>
+  <g id="male-casual-body">
+    <!-- Neck Base -->
+    <path d="M350,220 C350,220 350,320 330,340 C350,360 450,360 470,340 C450,320 450,220 450,220 Z" fill="url(#casual-skin)" />
+    
+    <!-- Red Inner T-Shirt Crewneck -->
+    <path d="M320,335 C320,335 340,370 400,370 C460,370 480,335 480,335 C480,335 460,380 400,380 C340,380 320,335 320,335 Z" fill="url(#inner-tee)" />
+    
+    <!-- Hoodie Shoulders & Torso -->
+    <path d="M220,370 C140,410 110,540 100,650 C100,750 120,1200 120,1200 L680,1200 C680,1200 700,750 700,650 C690,540 660,410 580,370 C540,350 490,345 490,345 L400,410 L310,345 C310,345 260,350 220,370 Z" fill="url(#hoodie-color)" />
+    
+    <!-- Hoodie Hood (draped around neck) -->
+    <path d="M310,345 C290,310 270,350 280,380 C290,410 320,430 350,420 C380,410 400,390 400,390 C400,390 420,410 450,420 C480,430 510,410 520,380 C530,350 510,310 490,345 C490,345 450,310 400,310 C350,310 310,345 310,345 Z" fill="#1e293b" stroke="#0f172a" stroke-width="3" />
+    
+    <!-- Hoodie Drawstrings -->
+    <path d="M360,410 L365,520 C365,525 360,530 355,530 C350,530 345,525 345,520 Z" fill="#cbd5e1" stroke="#475569" stroke-width="1" />
+    <path d="M440,410 L435,505 C435,510 440,515 445,515 C450,515 455,510 455,505 Z" fill="#cbd5e1" stroke="#475569" stroke-width="1" />
+    
+    <!-- Hoodie Pocket outlines -->
+    <path d="M280,850 L520,850 L560,1050 L240,1050 Z" fill="#1e293b" opacity="0.3" stroke="#0f172a" stroke-width="2" />
+  </g>
+</svg>

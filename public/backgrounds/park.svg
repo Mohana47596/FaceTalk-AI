@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#76b2fe" />
+      <stop offset="60%" stop-color="#bce0fd" />
+      <stop offset="100%" stop-color="#e1f1ff" />
+    </linearGradient>
+    <linearGradient id="grass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ea844" />
+      <stop offset="100%" stop-color="#1c5c16" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="1" />
+      <stop offset="20%" stop-color="#ffea9f" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffea9f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1920" height="700" fill="url(#sky)" />
+  <!-- Sun -->
+  <circle cx="1600" cy="200" r="300" fill="url(#sun)" />
+  <!-- Distant Hills -->
+  <path d="M-100,700 Q300,500 800,650 T1800,600 Q2000,590 2100,700 Z" fill="#69b85c" opacity="0.7" />
+  <path d="M-100,700 Q500,550 1100,620 T2100,650 Z" fill="#58a04b" opacity="0.85" />
+  <!-- Ground Grass -->
+  <rect y="680" width="1920" height="400" fill="url(#grass)" />
+  <!-- Silhouette Trees in Background -->
+  <g fill="#2e6d24" opacity="0.6">
+    <!-- Tree 1 -->
+    <path d="M150,680 C120,600 100,520 180,480 C260,440 280,500 250,680 Z" />
+    <circle cx="180" cy="480" r="60" />
+    <circle cx="140" cy="510" r="50" />
+    <circle cx="220" cy="500" r="55" />
+    <!-- Tree 2 -->
+    <path d="M1750,680 C1720,580 1700,500 1780,450 C1860,400 1880,480 1850,680 Z" />
+    <circle cx="1780" cy="450" r="70" />
+    <circle cx="1730" cy="480" r="60" />
+    <circle cx="1830" cy="470" r="65" />
+  </g>
+</svg>

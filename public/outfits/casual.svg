@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#1a1a2e" rx="12" />
+  <!-- Mini Casual -->
+  <path d="M25,20 L50,45 L75,20 L65,15 L50,35 L35,15 Z" fill="#ffffff" />
+  <path d="M15,25 C10,30 5,60 5,80 L95,80 C95,60 90,30 85,25 L65,22 L50,50 L35,22 Z" fill="#2b5c8f" />
+</svg>

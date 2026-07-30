@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="female-skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="denim-jacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b5c8f" />
+      <stop offset="50%" stop-color="#1e3d5f" />
+      <stop offset="100%" stop-color="#112233" />
+    </linearGradient>
+    <linearGradient id="shirt-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+  </defs>
+  <g id="female-casual-body">
+    <!-- Slender Female Neck -->
+    <path d="M360,220 C360,220 360,320 345,340 C360,355 440,355 455,340 C440,320 440,220 440,220 Z" fill="url(#female-skin)" />
+    
+    <!-- White T-Shirt Collar (lower scoop neck) -->
+    <path d="M330,335 C330,335 350,385 400,385 C450,385 470,335 470,335 C470,335 450,398 400,398 C350,398 330,335 330,335 Z" fill="url(#shirt-grad)" stroke="#cbd5e1" stroke-width="1" />
+    
+    <!-- Denim Jacket Over White T-shirt -->
+    <path d="M230,380 C160,420 130,550 120,650 C120,750 140,1200 140,1200 L660,1200 C660,1200 680,750 680,650 C670,550 640,420 570,380 C530,360 480,355 480,355 L400,410 L320,355 C320,355 270,360 230,380 Z" fill="url(#denim-jacket)" />
+    
+    <!-- Open jacket lapels showing the shirt inside -->
+    <path d="M320,355 L370,550 L370,1200 L320,1200 Z" fill="#1e293b" opacity="0.4" />
+    <path d="M480,355 L430,550 L430,1200 L480,1200 Z" fill="#334155" opacity="0.3" />
+    
+    <!-- Slender Female Waist Silhouette Overlay -->
+    <path d="M260,380 L350,370 L350,1200 L140,1200 C140,1200 180,700 200,600 C220,500 230,420 260,380 Z" fill="#0f172a" opacity="0.15" />
+    <path d="M540,380 L450,370 L450,1200 L660,1200 C660,1200 620,700 600,600 C580,500 570,420 540,380 Z" fill="#0f172a" opacity="0.15" />
+  </g>
+</svg>

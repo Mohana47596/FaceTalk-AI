@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kurta-skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <!-- Khadi / Cream linen color for traditional Gandhi kurta -->
+    <linearGradient id="kurta-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5efe6" />
+      <stop offset="50%" stop-color="#eadecc" />
+      <stop offset="100%" stop-color="#dcd0be" />
+    </linearGradient>
+  </defs>
+  <g id="male-kurta-body">
+    <!-- Neck Base -->
+    <path d="M350,220 C350,220 350,320 330,340 C350,360 450,360 470,340 C450,320 450,220 450,220 Z" fill="url(#kurta-skin)" />
+    
+    <!-- Kurta Collar (Mandarin Collar) -->
+    <path d="M320,335 C320,335 340,310 400,310 C460,310 480,335 480,335 C480,335 460,345 400,345 C340,345 320,335 320,335 Z" fill="#eadecc" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Kurta Front Placket & Buttons -->
+    <path d="M390,340 L410,340 L410,550 L390,550 Z" fill="#dcd0be" stroke="#cbbfae" stroke-width="1.5" />
+    <!-- Buttons -->
+    <circle cx="400" cy="370" r="5" fill="#a49787" />
+    <circle cx="400" cy="420" r="5" fill="#a49787" />
+    <circle cx="400" cy="470" r="5" fill="#a49787" />
+    <circle cx="400" cy="520" r="5" fill="#a49787" />
+    
+    <!-- Kurta Fabric Folds & Body -->
+    <path d="M220,360 C140,400 110,540 100,650 C100,750 120,1200 120,1200 L680,1200 C680,1200 700,750 700,650 C690,540 660,400 580,360 C550,345 490,340 490,340 L400,380 L310,340 C310,340 250,345 220,360 Z" fill="url(#kurta-color)" />
+    
+    <!-- Fabric Fold Lines (to give texture and realism) -->
+    <path d="M180,420 Q240,450 310,410" fill="none" stroke="#cca43b" stroke-width="1" opacity="0.15" />
+    <path d="M620,420 Q560,450 490,410" fill="none" stroke="#cca43b" stroke-width="1" opacity="0.15" />
+    <path d="M120,680 Q220,720 330,680" fill="none" stroke="#bdae9c" stroke-width="1.5" opacity="0.4" />
+    <path d="M680,680 Q580,720 470,680" fill="none" stroke="#bdae9c" stroke-width="1.5" opacity="0.4" />
+  </g>
+</svg>

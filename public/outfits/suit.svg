@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#1a1a2e" rx="12" />
+  <!-- Mini Suit collar -->
+  <path d="M25,20 L50,55 L75,20 L65,15 L50,45 L35,15 Z" fill="#ffffff" />
+  <path d="M47,35 L53,35 L55,75 L50,85 L45,75 Z" fill="#991b1b" />
+  <path d="M15,25 C10,30 5,60 5,80 L95,80 C95,60 90,30 85,25 L65,22 L50,60 L35,22 Z" fill="#1b263b" />
+</svg>

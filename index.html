@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceTalk AI - Real-Time Photorealistic Avatar Interaction</title>
+    <meta name="description" content="Engage in live voice conversations with intelligent photorealistic AI avatars. Upload any photo, extract the face automatically, and talk in real time using Gemini 1.5, ElevenLabs, and SadTalker." />
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script>
+      (function() {
+        window.appLogs = [];
+        window.sendLog = function(msg) {
+          window.appLogs.push(msg);
+          if (window.appLogs.length > 25) {
+            window.appLogs.shift();
+          }
+          window.dispatchEvent(new CustomEvent('app_log_updated'));
+
+          // Fallback fetch to backend
+          fetch('http://127.0.0.1:8000/log-error', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              message: msg,
+              stack: ''
+            })
+          }).catch(err => {});
+        };
+
+        window.onerror = function(message, source, lineno, colno, error) {
+          window.sendLog(`[EXCEPTION] ${message} (${source}:${lineno})`);
+          return false;
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+          const reason = event.reason;
+          window.sendLog(`[UNHANDLED REJECTION] ${reason && reason.message || String(reason)}`);
+        });
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

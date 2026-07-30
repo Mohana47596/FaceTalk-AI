@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <!-- Skin Tone Gradient for Neck (neutral/fair to match typical portrait and blend smoothly) -->
+    <linearGradient id="neck-skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="suit-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1b263b" />
+      <stop offset="50%" stop-color="#2b3a55" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="shirt-color" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="tie-color" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+  </defs>
+  <!-- Body Group -->
+  <g id="male-formal-body">
+    <!-- Neck Base (helps blend the chin) -->
+    <path d="M350,220 C350,220 350,320 330,340 C350,360 450,360 470,340 C450,320 450,220 450,220 Z" fill="url(#neck-skin)" />
+    
+    <!-- White Shirt Collar -->
+    <path d="M330,340 L350,380 L400,390 L450,380 L470,340 L450,350 L400,370 L350,350 Z" fill="url(#shirt-color)" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Red Tie -->
+    <path d="M390,375 L410,375 L415,480 L400,520 L385,480 Z" fill="url(#tie-color)" />
+    <polygon points="385,370 415,370 408,390 392,390" fill="#7f1d1d" />
+    
+    <!-- Suit Shoulders & Torso -->
+    <path d="M220,380 C150,420 120,550 110,650 C110,750 130,1200 130,1200 L670,1200 C670,1200 690,750 690,650 C680,550 650,420 580,380 C550,360 470,350 470,350 L400,420 L330,350 C330,350 250,360 220,380 Z" fill="url(#suit-color)" />
+    
+    <!-- Suit Lapels -->
+    <path d="M330,350 L400,420 L400,600 L300,450 Z" fill="#0f172a" opacity="0.4" />
+    <path d="M470,350 L400,420 L400,600 L500,450 Z" fill="#0f172a" opacity="0.3" />
+    <path d="M330,350 L310,420 L345,430 L315,500 L400,620 L400,420 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2" />
+    <path d="M470,350 L490,420 L455,430 L485,500 L400,620 L400,420 Z" fill="#334155" stroke="#0f172a" stroke-width="2" />
+    
+    <!-- Suit Pocket & Pocket Square -->
+    <path d="M260,460 L320,445 L320,455 L260,470 Z" fill="#0f172a" />
+    <polygon points="275,460 290,430 305,455" fill="#991b1b" />
+    <polygon points="290,452 300,435 310,450" fill="#f8fafc" />
+  </g>
+</svg>

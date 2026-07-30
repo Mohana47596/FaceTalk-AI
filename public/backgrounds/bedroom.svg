@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#0f2027" />
+    </linearGradient>
+    <linearGradient id="warm-lamp" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#ff5500" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Bedroom Walls -->
+  <rect width="1920" height="1080" fill="url(#wall)" />
+  <!-- Warm light cone from side lamp -->
+  <polygon points="1920,100 1200,1080 1920,1080" fill="url(#warm-lamp)" />
+  <!-- Stylized Window silhouette -->
+  <rect x="200" cy="150" width="400" height="500" fill="#ffffff" opacity="0.05" rx="10" />
+  <line x1="400" y1="150" x2="400" y2="650" stroke="#ffffff" stroke-width="3" opacity="0.1" />
+  <line x1="200" y1="400" x2="600" y2="400" stroke="#ffffff" stroke-width="3" opacity="0.1" />
+  <!-- Window moonlight cast -->
+  <polygon points="200,650 600,650 800,1080 0,1080" fill="#00f2fe" opacity="0.03" />
+  <!-- Floating ambient light -->
+  <circle cx="1700" cy="200" r="120" fill="#ffea75" opacity="0.1" filter="blur(40px)" />
+</svg>

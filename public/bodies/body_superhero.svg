@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hero-skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffdec2" stop-opacity="0" />
+      <stop offset="60%" stop-color="#eac2a4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#d4aa8a" />
+    </linearGradient>
+    <linearGradient id="armor-color" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="armor-plate" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <radialGradient id="reactor-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <g id="superhero-armor-body">
+    <!-- Neck Base -->
+    <path d="M350,220 C350,220 350,320 330,340 C350,360 450,360 470,340 C450,320 450,220 450,220 Z" fill="url(#hero-skin)" />
+    
+    <!-- Armor Tech Neck Collar -->
+    <path d="M320,330 L340,300 L460,300 L480,330 L450,355 L400,360 L350,355 Z" fill="#1e293b" stroke="#06b6d4" stroke-width="2.5" />
+    
+    <!-- Armor Shoulders & Chest -->
+    <path d="M220,370 C140,400 100,520 90,650 C90,750 110,1200 110,1200 L690,1200 C690,1200 710,750 710,650 C700,520 660,400 580,370 C540,350 490,340 490,340 L400,370 L310,340 C310,340 260,350 220,370 Z" fill="url(#armor-color)" stroke="#06b6d4" stroke-width="2" />
+    
+    <!-- Chest Armor Plates -->
+    <path d="M250,420 L350,440 L400,390 L450,440 L550,420 L580,550 L400,590 L220,550 Z" fill="url(#armor-plate)" stroke="#4338ca" stroke-width="1.5" />
+    <path d="M270,440 L350,455 L400,410 L450,455 L530,440 L550,530 L400,570 L250,530 Z" fill="#312e81" stroke="#06b6d4" stroke-width="1.5" />
+    
+    <!-- Arc Reactor (Glowing Chest Piece) -->
+    <circle cx="400" cy="500" r="50" fill="url(#reactor-glow)" />
+    <circle cx="400" cy="500" r="30" fill="#ffffff" stroke="#22d3ee" stroke-width="3" />
+    <!-- Reactor tech detailing -->
+    <line x1="400" y1="450" x2="400" y2="550" stroke="#06b6d4" stroke-width="2" opacity="0.6" />
+    <line x1="350" y1="500" x2="450" y2="500" stroke="#06b6d4" stroke-width="2" opacity="0.6" />
+  </g>
+</svg>

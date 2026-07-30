@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#1a1a2e" rx="12" />
+  <!-- Mini Kurta -->
+  <path d="M15,25 C10,30 5,60 5,80 L95,80 C95,60 90,30 85,25 L65,22 L50,38 L35,22 Z" fill="#f5efe6" />
+  <!-- Placket -->
+  <path d="M47,20 L53,20 L53,50 L47,50 Z" fill="#dcd0be" />
+  <circle cx="50" cy="27" r="2" fill="#a49787" />
+  <circle cx="50" cy="35" r="2" fill="#a49787" />
+  <circle cx="50" cy="43" r="2" fill="#a49787" />
+</svg>

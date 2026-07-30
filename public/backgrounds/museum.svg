@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="museum-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a3e3d" />
+      <stop offset="60%" stop-color="#2c2221" />
+      <stop offset="100%" stop-color="#140f0e" />
+    </linearGradient>
+    <linearGradient id="column-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#110d0d" />
+      <stop offset="30%" stop-color="#554443" />
+      <stop offset="70%" stop-color="#3c2f2e" />
+      <stop offset="100%" stop-color="#0b0808" />
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#fff6d6" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#ffe2a1" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Background Walls -->
+  <rect width="1920" height="1080" fill="url(#museum-wall)" />
+  <!-- Spotlight from top -->
+  <polygon points="960,0 300,1080 1620,1080" fill="url(#spotlight)" />
+  <!-- Classical Pillars/Columns on the sides -->
+  <!-- Left Pillar -->
+  <rect x="0" y="0" width="200" height="1080" fill="url(#column-grad)" />
+  <rect x="0" y="1000" width="230" height="80" fill="#251b1b" />
+  <rect x="0" y="0" width="230" height="80" fill="#251b1b" />
+  <!-- Right Pillar -->
+  <rect x="1720" y="0" width="200" height="1080" fill="url(#column-grad)" />
+  <rect x="1690" y="1000" width="230" height="80" fill="#251b1b" />
+  <rect x="1690" y="0" width="230" height="80" fill="#251b1b" />
+  <!-- Hanging Empty Picture Frame on Back Wall (Elegant museum detail) -->
+  <rect x="660" y="200" width="600" height="400" fill="none" stroke="#cca43b" stroke-width="20" rx="5" />
+  <rect x="680" y="220" width="560" height="360" fill="#1b1514" />
+  <!-- Spotlight inside frame -->
+  <ellipse cx="960" cy="400" rx="200" ry="120" fill="#ffffff" opacity="0.03" />
+</svg>

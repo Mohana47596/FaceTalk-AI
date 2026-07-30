@@ -1,0 +1,6 @@
+with open("src/components/FaceTalkScene.jsx", "r", encoding="utf-8") as f:
+    lines = f.read().splitlines()
+
+for i, line in enumerate(lines):
+    if "uploadedFaceInfo" in line or "faceTexture" in line:
+        print(f"{i+1}: {line}")
